@@ -1,0 +1,60 @@
+@charset 'utf-8';
+
+/* 초기화 */
+* {margin: 0; padding: 0; box-sizing:border-box;}
+a {text-decoration: none;}
+li {list-style: none;}
+img {display: block; border: 0;}
+h1, h2, h3, h4, h5, h6, a, p, td, th{color: #333; font-family: 'Nanum Myeongjo', serif;}
+.hidden {position: absolute; left: -9999px;}
+.clearfix::after, .clearfix::before {display: block; content: ''; clear: both;}
+
+/*
+#ff8f2f
+#6e544e
+#99807e
+#d6cfcd
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+*/
+
+/* 레이아웃 */
+#haderWrap {text-align: center; width: 100%; height: 90px; background: #6e544e;}
+.section_wrap {margin: 0 auto; width: 1200px;}
+
+/* 헤더 */
+#header {display: inline-block; position: relative; width: 1280px; height: 90px;}
+#header h1 {position: absolute; left: 10px; top: 50%; transform: translateY(-50%);}
+#header #lnb {position: absolute; top: 0; right: 25px;}
+#header #lnb li {float: left;}
+#header #lnb li a {display: block; padding: 10px; font-size: 13px; font-family: 'Noto Sans KR', sans-serif; font-weight: 300; transition: all 0.2s ease-in-out; color: #99807e;}
+#header #lnb li a:hover {color : #ff8f2f;}
+#header #lnb li a b {color: #d6cfcd;}
+
+#header #gnb {position: absolute; top: 50px; right: 125px;}
+#header #gnb li {float: left;}
+#header #gnb li a {display: block; padding: 0 20px; font-weight: 700; transition: all 0.2s ease-in-out; color: #d6cfcd;}
+#header #gnb li a:hover {color : #ff8f2f;}
+
+#header #lnbIco {position: absolute; top: 45px; right: 30px; border-left: 1px solid #99807e;}
+#header #lnbIco ul {padding-left: 5px;}
+#header #lnbIco li {float: left;}
+#header #lnbIco li a {display: block; padding: 5px; font-size: 21px; color: #d6cfcd;}
+
+/* top section */
+#top {overflow: hidden; width: 100%; height: 700px;}
+#top #bg {width: 100%; height: 100%; background: url(../images/main_top.jpg) no-repeat fixed;}
+
+/* about section */
+#about {background: #f7f7f7; padding: 100px 0;}
+#about .about_txt {float: left; width: 700px;}
+#about .about_txt h3 {margin-top: 50px; font-size: 40px; color : #ff8f2f; border-bottom: 3px solid #ff8f2f;}
+#about .about_txt h4 {margin-top: 30px; font-size: 45px;}
+#about .about_txt p {margin-top: 15px; line-height: 25px;}
+#about .about_img {float: right; padding: 30px;}
+
+/* banner section */
+#banner {overflow: hidden; width: 100%; height: 600px;}
+#banner > div {float: left; width: 50%; height: 100%;}
+#banner div.left {background: url(../images/content_bg1.jpg) no-repeat left fixed;}
+#banner div.right {background: url(../images/content_bg2.jpg) no-repeat right fixed;}
