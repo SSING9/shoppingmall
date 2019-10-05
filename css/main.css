@@ -58,3 +58,36 @@ font-family: 'Nanum Myeongjo', serif;
 #banner > div {float: left; width: 50%; height: 100%;}
 #banner div.left {background: url(../images/content_bg1.jpg) no-repeat left fixed;}
 #banner div.right {background: url(../images/content_bg2.jpg) no-repeat right fixed;}
+#banner .contents {padding-top: 150px; margin: 0 auto; width: 550px;}
+#banner a, #banner p {color: #fff; text-align: center;}
+#banner .tit {padding: 20px; font-size: 28px; font-weight: 700;}
+#banner .txt {padding: 10px; font-size: 17px; line-height: 23px;}
+#banner .link {margin-top: 30px;}
+#banner .link a {padding: 10px 20px; font-size: 20px; border: 1px solid #fff; transition: 0.2s ease-in-out all;}
+#banner .link a:hover {background: #fff; color: #333; transition: 0.2s ease-in-out all;}
+
+/* product section */
+#product {text-align: center;}
+#product h3 {margin-top: 150px; text-align: center; font-size: 30px;}
+#product p {text-align: center;}
+#product p.top_txt {padding: 15px; font-size: 20px;}
+#product li {float: left; padding: 30px 10px;}
+#product li .img_wrap {overflow: hidden; width: 380px; height: 350px; border-radius: 3%;}
+#product li:hover .img_wrap img {transform: scale(1.05); transition: all 0.2s ease-in-out;}
+#product li .tit {padding: 15px 0 10px; font-size: 20px; font-weight: 600; color: #ff8f2f;}
+#product li .about {padding: 5px; font-size: 15px; color: #777;}
+#product li .price {font-size: 17px; font-weight: 700;}
+#product .more_view {display: inline-block; margin: 80px;}
+#product .more_view a {display: block; padding: 20px 150px; font-size: 20px; font-weight: 700; border: 1px solid #333; transition: 0.2s ease-in-out all;}
+#product .more_view a:hover {background: #333; color: #fff; transition: 0.2s ease-in-out all;}
+
+
+/* footer */
+#footer {width: 100%; background: #090909; padding: 50px 0 30px; text-align: center;}
+#footer a, li {color: #e3e3e3;}
+#footer .sns {display: inline-block; padding: 30px;}
+#footer .sns li {padding: 10px; float: left;}
+#footer .sns li a {display: block;}
+#footer .sns li:hover i {color: #ff8f2f;}
+#footer .info li {padding: 3px;}
+#footer a.footer_logo {display: inline-block; padding-top: 50px;}
