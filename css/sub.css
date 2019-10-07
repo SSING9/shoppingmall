@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 /* 초기화 */
 * {margin: 0; padding: 0; box-sizing:border-box;}
@@ -48,10 +48,9 @@ font-family: 'Nanum Myeongjo', serif;
 #product .product_img li.active {border: 4px solid #ff8f2f;}
 #product .product_img li a {display: block; }
 
-
 .product_tit, .product_info, .product_value, .product_link {float: left; margin-left: 70px; width: 50%;}
-#product .product_tit {border-bottom: 1px solid #eee;}
-#product .product_tit h3 {font-size: 30px}
+#product .product_tit {border-bottom: 1px solid #eee; text-align: left;}
+#product .product_tit h3 {font-size: 30px; color: #ff8f2f;}
 #product .product_tit p {padding: 18px 3px; font-size: 15px; color: #999;}
 
 #product .product_info table {text-align: left;}

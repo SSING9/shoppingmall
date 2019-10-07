@@ -14,7 +14,7 @@
 <body>
    <div id="haderWrap">
       <header id="header">
-         <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+         <h1><a href="index.html"><img src="images/logo.png" alt="메인로고"></a></h1>
          <nav id=lnb>
             <h2 class="hidden">쇼핑몰 서브 메뉴</h2>
             <ul class="clearfix">
@@ -29,12 +29,12 @@
          <nav id="gnb">
             <h2 class="hidden">쇼핑몰 메인 메뉴</h2>
             <ul class="clearfix">
-               <li><a href="sub.html"">선물 과일</a></li>
-               <li><a href="sub.html"">제철 과일</a></li>
-               <li><a href="sub.html"">도시락/디저트</a></li>
-               <li><a href="sub.html"">정기배송</a></li>
-               <li><a href="sub.html"">진정한 먹거리</a></li>
-               <li><a href="sub.html"">브랜드스토리</a></li>
+               <li><a href="sub.html">선물 과일</a></li>
+               <li><a href="sub.html">제철 과일</a></li>
+               <li><a href="sub.html">도시락/디저트</a></li>
+               <li><a href="sub.html">정기배송</a></li>
+               <li><a href="sub.html">진정한 먹거리</a></li>
+               <li><a href="sub.html">브랜드스토리</a></li>
             </ul>
          </nav>
          <div id="lnbIco">
@@ -66,10 +66,7 @@
          <div class="product_info">
             <table>
                <caption class="hidden">상품정보(판매가, 판매옵션, 금액 등)</caption>
-               <colgroup>
-                  <col style="width:px">
-                  <col>
-               </colgroup>
+               
                <tbody>
                   <tr>
                      <th>판매가</th>
@@ -111,6 +108,7 @@
       <!-- product section 끝 -->
 
       <section id="detailPage" class="clearfix">
+         <h2 class="hidden">제품 상세설명 탭</h2>
          <div class="detail_tap">
             <ul>
                <li class="active"><a href="#">상세설명</a></li>
@@ -150,50 +148,7 @@
    <!-- footer 끝 -->
 
    <script src="js/jquery-3.3.1.min.js"></script>
-   <!-- <script src="js/sub.js"></script> -->
-   <script>
-
-      var mainImg = $('#product > .product_img > img')
-      var minImg = $('#product > .product_img > ul > li')
-      minImg.click(function(e){
-         e.preventDefault();
-         const target = $(this);
-         const index = target.index();
-         minImg.removeClass('active');
-         target.addClass('active');
-         mainImg.attr('src', 'images/productImg'+ (index + 1) +'.jpg')
-      });
-
-      var plusBtn = $('.product_value > .number > .plus')
-      var minusBtn = $('.product_value > .number > .minus')
-      var number = $('.product_value > .number > input')
-      var plusNum = 2;
-      var price = $('.product_value > p > span')
-      plusBtn.click(function(e){
-         e.preventDefault();
-         number.val(plusNum);
-         price.html(20*plusNum+','+'000');
-         plusNum++;
-      });
-      minusBtn.click(function(e){
-         e.preventDefault();
-         plusNum--;
-         if (plusNum >= 1){
-            number.val(plusNum);
-            price.html(20*plusNum+','+'000');
-         } else {
-            plusNum = 1;
-         }
-      });
-
-      var tab = $('#detailPage > .detail_tap > ul > li');
-      tab.click(function(e){
-         e.preventDefault();
-         const target = $(this);
-         const index = target.index();
-         tab.removeClass('active');
-         target.addClass('active');
-      });
-   </script>
+   <script src="js/sub.js"></script>
+   
 </body>
 </html>
