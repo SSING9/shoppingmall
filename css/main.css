@@ -97,3 +97,7 @@ font-family: 'Nanum Myeongjo', serif;
 #footer .sns li:hover i {color: #ff8f2f;}
 #footer .info li {padding: 3px;}
 #footer a.footer_logo {display: inline-block; padding-top: 50px;}
+
+/* 포트폴리오 바로가기 */
+.portfolio {width: 100%; background: #3a3a3a; text-align: center;}
+.portfolio img {display: inline-block; padding: 20px;}
